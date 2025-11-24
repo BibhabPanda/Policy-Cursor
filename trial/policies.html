@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Policies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          <strong>Your Insurance Policies</strong>
+        </div>
+
+        <div class="card-body">
+          <table class="table table-hover table-bordered align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Policy Number</th>
+                <th>Vehicle</th>
+                <th>Coverage</th>
+                <th>Premium</th>
+                <th>Status</th>
+                <th>Premium Payment</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- SAMPLE ENTRY WITH PAYMENT AVAILABLE -->
+              <tr>
+                <td>POL-2025-0023</td>
+                <td>Toyota Camry • 2023</td>
+                <td>Full Coverage</td>
+                <td>$480/year</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Pay Premium</button>
+                </td>
+              </tr>
+
+              <!-- SAMPLE ENTRY WHERE PAYMENT ALREADY DONE -->
+              <tr>
+                <td>POL-2025-0038</td>
+                <td>BMW 320i • 2024</td>
+                <td>Full Coverage</td>
+                <td>$890/year</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>
+                  <button class="btn btn-secondary btn-sm" disabled>
+                    Paid
+                  </button>
+                </td>
+              </tr>
+
+              <!-- SAMPLE EXPIRED POLICY -->
+              <tr>
+                <td>POL-2025-0044</td>
+                <td>Honda Civic • 2022</td>
+                <td>Liability Only</td>
+                <td>$300/year</td>
+                <td><span class="badge bg-danger">Expired</span></td>
+                <td>
+                  <button class="btn btn-secondary btn-sm" disabled>
+                    Not Available
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
